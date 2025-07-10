@@ -231,7 +231,7 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: rgba(255,255,255,0.85);
+  background: rgba(248,250,248,0.9);
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -262,7 +262,7 @@ a {
   position: absolute;
   right: 0;
   min-height: 100%;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.85);
   left: 300px;
   width: auto;
 }
@@ -1196,7 +1196,7 @@ color
   font-size: 12px;
 }
 .archives-wrap {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.45);
 }
 .archives-wrap .archives {
   background: transparent;
@@ -1209,7 +1209,7 @@ color
   margin: 30px;
   margin-bottom: 5px;
   position: relative;
-  background: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.55);
   -webkit-transition: all 0.2s ease-in;
 }
 .article.show {
@@ -1557,7 +1557,7 @@ color
   opacity: 0.75;
 }
 .article-more-link a:hover {
-  background: #9c9;
+  background: #a8c6b1;
   opacity: 1;
 }
 .article-more-link a.hidden {
@@ -2050,7 +2050,7 @@ aside.comment-bar:active {
   font-size: 12px;
 }
 .archives-wrap {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.45);
 }
 .archives-wrap .archives {
   background: transparent;
@@ -2061,7 +2061,7 @@ aside.comment-bar:active {
   margin: auto;
   padding: 0.35em 1.5em;
   border-style: solid;
-  border-color: #ddd;
+  border-color: #cbd5cf;
   border-width: 1px;
   overflow: auto;
   color: #4d4d4c;
@@ -2135,7 +2135,7 @@ aside.comment-bar:active {
 .article-entry .gist {
   margin: 0 -20px;
   border-style: solid;
-  border-color: #ddd;
+  border-color: #cbd5cf;
   border-width: 1px 0;
   background: rgba(249,249,249,0.5);
   padding: 15px 20px 15px 0;
@@ -2172,7 +2172,7 @@ aside.comment-bar:active {
   margin-left: 20px;
 }
 .article-entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #88b2a4;
   font-weight: normal;
 }
 .article-entry .gist .gist-file .gist-meta a:hover {
@@ -2718,46 +2718,46 @@ pre .javascript .function {
   font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Lucida Grande", Verdana, "Helvetica Neue", Arial;
 }
 .tagcloud a.color0 {
-  background: #88acdb;
+  background: #a8c6b1;
 }
 .tagcloud a.color0::before {
-  border-right-color: #88acdb;
+  border-right-color: #a8c6b1;
 }
 .tagcloud a.color1 {
-  background: #ffa07a;
+  background: #c9dad4;
 }
 .tagcloud a.color1::before {
-  border-right-color: #ffa07a;
+  border-right-color: #c9dad4;
 }
 .tagcloud a.color2 {
-  background: #f08080;
+  background: #d8e4dc;
 }
 .tagcloud a.color2::before {
-  border-right-color: #f08080;
+  border-right-color: #d8e4dc;
 }
 .tagcloud a.color3 {
-  background: #76becc;
+  background: #9eb6a6;
 }
 .tagcloud a.color3::before {
-  border-right-color: #76becc;
+  border-right-color: #9eb6a6;
 }
 .tagcloud a.color4 {
-  background: #918597;
+  background: #b8ccc4;
 }
 .tagcloud a.color4::before {
-  border-right-color: #918597;
+  border-right-color: #b8ccc4;
 }
 .tagcloud a.color5 {
-  background: #6fc0e4;
+  background: #d2e2d7;
 }
 .tagcloud a.color5::before {
-  border-right-color: #6fc0e4;
+  border-right-color: #d2e2d7;
 }
 .tagcloud a.color6 {
-  background: #bc8f8f;
+  background: #b4c7b2;
 }
 .tagcloud a.color6::before {
-  border-right-color: #bc8f8f;
+  border-right-color: #b4c7b2;
 }
 .tagcloud a:hover {
   opacity: 1;
@@ -2765,11 +2765,11 @@ pre .javascript .function {
   -moz-transform: scale(1.06);
   -ms-transform: scale(1.06);
   transform: scale(1.06);
-  background-color: #9c9;
-  border-color: #9c9;
+  background-color: #a8c6b1;
+  border-color: #a8c6b1;
 }
 .tagcloud a:hover::before {
-  border-right-color: #9c9;
+  border-right-color: #a8c6b1;
 }
 .tagcloud a:before {
   content: " ";
