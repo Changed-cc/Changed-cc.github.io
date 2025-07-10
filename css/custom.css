@@ -1,0 +1,14 @@
+/* 莫兰迪绿色背景 */
+body {
+  background-color: #E0E5D6 !important;
+}
+
+/* 左侧边栏 */
+.left-col {
+  background-color: #8BA88E !important;
+}
+
+/* 文章卡片背景 */
+.post {
+  background-color: #C4D3C1 !important;
+}
