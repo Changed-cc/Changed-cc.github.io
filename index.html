@@ -204,16 +204,12 @@
       <h3>💬 留言板</h3>
       <div id="waline"></div>
 
-<link rel="stylesheet" href="https://unpkg.com/@waline/client/dist/waline.css" />
-
-<script src="https://unpkg.com/@waline/client/dist/waline.js"></script>
-
+<script src="https://unpkg.com/@waline/client/dist/waline.min.js"></script>
 <script>
   Waline.init({
     el: '#waline',
-    serverURL: 'https://changed-cc-github-io.vercel.app',
-    path: location.pathname,
-    lang: 'zh-CN'
+    serverURL: 'https://changed-cc-github-io.vercel.app/',
+    path: location.pathname
   })
 </script>
 
