@@ -7,6 +7,9 @@
 }
 .home-left {
   width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 统一中轴，对齐头像和访客数 */
 }
 .home-right {
   width: 360px;
@@ -27,14 +30,27 @@
   opacity: 0.7;
 }
 .busuanzi {
+  margin-top: 12px;
   font-size: 14px;
   color: #888;
-  margin-bottom: 6px;
+  text-align: center; /* 文本居中 */
+  line-height: 1.6;
 }
 .footer .busuanzi {
-  margin-bottom: 6px; /* 和 copyright 拉近 */
+  margin-bottom: 6px;
   font-size: 14px;
 }
 .footer .busuanzi span {
   margin: 0;
+}
+#simple-calendar {
+  text-align: center;
+}
+.cal-date {
+  font-size: 22px;
+  font-weight: 600;
+}
+.cal-week {
+  margin-top: 6px;
+  opacity: 0.6;
 }
