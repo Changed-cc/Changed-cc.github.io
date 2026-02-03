@@ -1,0 +1,40 @@
+.home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  margin-top: 80px;
+}
+.home-left {
+  width: 320px;
+}
+.home-right {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.home-widget {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.site-pv {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.7;
+}
+.busuanzi {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.footer .busuanzi {
+  margin-bottom: 6px; /* 和 copyright 拉近 */
+  font-size: 14px;
+}
+.footer .busuanzi span {
+  margin: 0;
+}
