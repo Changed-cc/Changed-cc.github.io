@@ -203,8 +203,21 @@
     <div class="home-widget">
       <h3>💬 留言板</h3>
       <div id="waline"></div>
-    </div>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://changed-cc-github-io.vercel.app',
+    path: location.pathname,
+    lang: 'zh-CN'
+  });
+</script>
+
+    </div>
+    
   </section>
 
 </div>
