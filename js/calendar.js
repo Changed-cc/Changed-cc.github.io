@@ -1,15 +1,12 @@
-(function () {
-  const el = document.getElementById('simple-calendar');
-  if (!el) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('calendar')
+  if (!el) return
 
-  const now = new Date();
-  const y = now.getFullYear();
-  const m = now.getMonth() + 1;
-  const d = now.getDate();
-  const w = ['日','一','二','三','四','五','六'][now.getDay()];
-
+  const today = new Date()
   el.innerHTML = `
-    <div class="cal-date">${y}-${m}-${d}</div>
-    <div class="cal-week">星期${w}</div>
-  `;
-})();
+    <div style="text-align:center;font-size:14px;">
+      <strong>${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}</strong><br>
+      ${today.toLocaleDateString('zh-CN', { weekday: 'long' })}
+    </div>
+  `
+})
