@@ -239,7 +239,7 @@
 <li>后端：接口设计、数据库设计</li>
 <li>前端：页面结构、交互逻辑</li>
 <li>测试：同步设计测试用例，测试报告<br>前后端对接口<br>（四）测试阶段（持续进行）<br>测试类型分为功能测试、接口测试、回归测试、部分自动化测试<br>（五）发布与运维阶段——CI&#x2F;CD模型</li>
-<li>部署</li>
+<li>部署：将软件项目开发环境迁移到生产环境的过程，使之可以实际使用。该过程通常包括环境准备、将代码打包成可执行文件并上传服务器、修改配置文件、启动服务。部署可以分为本地部署和云部署两种。</li>
 <li>监控</li>
 <li>容灾</li>
 <li>自动化发布</li>
@@ -248,10 +248,59 @@
 <blockquote>
 <p>现代软件开发以敏捷开发为主，融合迭代 &#x2F; 增量思想的混合模型。也就是根据用户需求优化以及增加新的功能</p>
 </blockquote>
-<h2 id="软件设计过程"><a href="#软件设计过程" class="headerlink" title="软件设计过程"></a>软件设计过程</h2><h3 id="一、设计原则（高内聚、低耦合）"><a href="#一、设计原则（高内聚、低耦合）" class="headerlink" title="一、设计原则（高内聚、低耦合）"></a>一、设计原则（高内聚、低耦合）</h3><h3 id="二、软件架构（分层、组件、服务）"><a href="#二、软件架构（分层、组件、服务）" class="headerlink" title="二、软件架构（分层、组件、服务）"></a>二、软件架构（分层、组件、服务）</h3><h3 id="三、UML-建模（类图、时序图等）"><a href="#三、UML-建模（类图、时序图等）" class="headerlink" title="三、UML 建模（类图、时序图等）"></a>三、UML 建模（类图、时序图等）</h3><h3 id="四、设计模式"><a href="#四、设计模式" class="headerlink" title="四、设计模式"></a>四、设计模式</h3><blockquote>
+<h2 id="软件设计过程"><a href="#软件设计过程" class="headerlink" title="软件设计过程"></a>软件设计过程</h2><h3 id="一、设计原则（高内聚、低耦合）"><a href="#一、设计原则（高内聚、低耦合）" class="headerlink" title="一、设计原则（高内聚、低耦合）"></a>一、设计原则（高内聚、低耦合）</h3><blockquote>
+<p>七大设计原则，前六个也被称为 SOLID 原则（稳定的意思），再加上一个迪米特法则</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">原则名称</th>
+<th align="left">关键</th>
+<th align="left">目的</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单一职责（SRP）</td>
+<td align="left">一个职责</td>
+<td align="left">提高内聚，降低复杂度</td>
+</tr>
+<tr>
+<td align="left">开闭原则（OCP）</td>
+<td align="left">扩展开放，修改关闭</td>
+<td align="left">提高可维护性和可扩展性</td>
+</tr>
+<tr>
+<td align="left">里氏代换 (LSP)</td>
+<td align="left">子类替换父类</td>
+<td align="left">确保继承复用的正确性</td>
+</tr>
+<tr>
+<td align="left">接口隔离 (ISP)</td>
+<td align="left">最小接口</td>
+<td align="left">避免强迫实现无用方法</td>
+</tr>
+<tr>
+<td align="left">依赖倒置 (DIP)</td>
+<td align="left">依赖抽象，而非实现</td>
+<td align="left">降低模块间耦合</td>
+</tr>
+<tr>
+<td align="left">合成复用 (CRP)</td>
+<td align="left">组合&#x2F;聚合优于继承</td>
+<td align="left">降低类间耦合，提高灵活性</td>
+</tr>
+<tr>
+<td align="left">迪米特法则(LoD)</td>
+<td align="left">最少知道</td>
+<td align="left">降低类间耦合</td>
+</tr>
+</tbody></table>
+<h3 id="二、软件架构（分层、组件、服务）"><a href="#二、软件架构（分层、组件、服务）" class="headerlink" title="二、软件架构（分层、组件、服务）"></a>二、软件架构（分层、组件、服务）</h3><h3 id="三、UML-建模（类图、时序图等）"><a href="#三、UML-建模（类图、时序图等）" class="headerlink" title="三、UML 建模（类图、时序图等）"></a>三、UML 建模（类图、时序图等）</h3><h3 id="四、设计模式"><a href="#四、设计模式" class="headerlink" title="四、设计模式"></a>四、设计模式</h3><blockquote>
 <p>软件设计模式主要分为三大类（GoF 23 种）</p>
 </blockquote>
-<p>（一）创建型模式（5 种） —— 解决「对象怎么创建」<br>（二）结构型模式（7 种） —— 解决「对象怎么组合」<br>（三）行为型模式（11 种） —— 解决「对象怎么协作」</p>
+<h5 id="（一）创建型模式（5-种）-——-解决「对象怎么创建」"><a href="#（一）创建型模式（5-种）-——-解决「对象怎么创建」" class="headerlink" title="（一）创建型模式（5 种） —— 解决「对象怎么创建」"></a>（一）创建型模式（5 种） —— 解决「对象怎么创建」</h5><p><strong>（1）工厂方法模式——factory method model</strong><br><strong>（2）抽象工厂——abstract method model</strong><br>（3）原型模式——prototype model<br><strong>（4）单例模式——singleton model</strong><br>（5）构建器模式——builder model</p>
+<h5 id="（二）结构型模式（7-种）-——-解决「对象怎么组合」"><a href="#（二）结构型模式（7-种）-——-解决「对象怎么组合」" class="headerlink" title="（二）结构型模式（7 种） —— 解决「对象怎么组合」"></a>（二）结构型模式（7 种） —— 解决「对象怎么组合」</h5><p>（1）适配器模式——adapter model<br>（2）桥接模式——bridge model<br>（3）组合模式——composite model<br>（4）装饰模式——decorator model<br>（5）外观模式——facade model<br>（6）享元模式——flyweight model<br>（7）代理模式——proxy model</p>
+<h5 id="（三）行为型模式（11-种）-——-解决「对象怎么协作」"><a href="#（三）行为型模式（11-种）-——-解决「对象怎么协作」" class="headerlink" title="（三）行为型模式（11 种） —— 解决「对象怎么协作」"></a>（三）行为型模式（11 种） —— 解决「对象怎么协作」</h5><p>（1）职责链模式——chain of responsibility model<br>（2）命令模式——command model<br>（3）解释器模式——interpreter model<br>（4）迭代器模式——iterator model<br>（5）中介者——mediator model<br>（6）备忘录模式——memento model<br><strong>（7）观察者模式——observer model</strong><br>（8）状态模式——state model<br><strong>（9）策略模式——strategy model</strong><br>（10）模板方法——template method<br>（11）访问者模式——visitor model</p>
 
         </div>
 
@@ -266,7 +315,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2026/02/01/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">http://example.com/2026/02/01/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</a></span>
+                        <span><a href="http://example.com/2026/02/01/SoftwareEng/">http://example.com/2026/02/01/SoftwareEng/</a></span>
                     </p>
                 
                 
