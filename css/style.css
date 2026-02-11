@@ -1322,59 +1322,33 @@ body.dark-theme .highlight .code .deletion,
 body.dark-theme .highlight .code .meta {
   color: #7f7f7f;
 }
-.home-layout {
+.main .home-layout {
+  flex: 1; /* ← 关键 */
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  box-sizing: border-box;
 }
-.home-left {
-  width: 320px;
+.main .home-left {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 统一中轴，对齐头像和访客数 */
-}
-.home-right {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
-.home-widget {
-  background: var(--card-bg);
-  border-radius: 16px;
-  padding: 16px 18px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+.main #calendar {
+  width: 100%;
+  max-width: 360px;
 }
-.site-pv {
-  margin-top: 12px;
-  font-size: 14px;
-  text-align: center;
-  opacity: 0.7;
+.main .home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.busuanzi {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #888;
-  text-align: center; /* 文本居中 */
-  line-height: 1.6;
-}
-.footer .busuanzi {
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-.footer .busuanzi span {
-  margin: 0;
-}
-#simple-calendar {
-  text-align: center;
-}
-.cal-date {
-  font-size: 22px;
-  font-weight: 600;
-}
-.cal-week {
-  margin-top: 6px;
-  opacity: 0.6;
+.main .home-right .home-widget {
+  width: 100%;
+  max-width: 520px;
 }

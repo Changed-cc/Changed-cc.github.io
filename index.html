@@ -77,13 +77,13 @@
             <div class="navbar-header header-logo"><a href="/">Changed-cc&#39;s Blog</a></div>
             <div class="menu navbar-right">
                 
-                <a class="menu-item" href="/archives/">文章</a>
+                <a class="menu-item" href="/archives">文章</a>
                 
-                <a class="menu-item" href="/category/">分类</a>
+                <a class="menu-item" href="/category">分类</a>
                 
-                <a class="menu-item" href="/tag/">标签</a>
+                <a class="menu-item" href="/tag">标签</a>
                 
-                <a class="menu-item" href="/about/">关于我</a>
+                <a class="menu-item" href="/about">关于我</a>
                 
                 
                 <input id="switch_default" type="checkbox" class="switch_default">
@@ -106,13 +106,13 @@
             </div>
             <div class="menu" id="mobile-menu">
                 
-                <a class="menu-item" href="/archives/">文章</a>
+                <a class="menu-item" href="/archives">文章</a>
                 
-                <a class="menu-item" href="/category/">分类</a>
+                <a class="menu-item" href="/category">分类</a>
                 
-                <a class="menu-item" href="/tag/">标签</a>
+                <a class="menu-item" href="/tag">标签</a>
                 
-                <a class="menu-item" href="/about/">关于我</a>
+                <a class="menu-item" href="/about">关于我</a>
                 
             </div>
         </div>
@@ -134,12 +134,10 @@
 </script>
             <div class="main">
                 
-
-<div class="home-layout">
-
-  <!-- 左侧：个人信息 -->
-  <aside class="home-left">
-    <div class="container profile-container">
+    <div class="home-layout">
+    <!-- 左侧：个人信息 -->
+    <aside class="home-left">
+        <div class="container profile-container">
     <div class="intro">
         <div class="avatar">
             <a href="/"><img src="/image/avatar.png"></a>
@@ -180,48 +178,39 @@
                 
             
         </div>
-    </div>
+        <div class="webCounter">
+            本站总访客数 <span id="busuanzi_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人<br>
+            今日总访客数 <span id="busuanzi_today_uv"><i class="fa fa-spinner fa-spin"></i></span> 人
+        </div>
 </div>
 
-    <div class="busuanzi">
-      本站总访客数 <span id="busuanzi_site_uv">加载中...</span> 人<br>
-      今日总访客数 <span id="busuanzi_today_uv">加载中...</span> 人
-    </div>
-  </aside>
+       <div id="calendar"></div>
+    </aside>
+    <!-- 右侧：功能区 -->
+    <section class="home-right">
+        <!-- 留言板 -->
+        <div class="home-widget">
+        <h3>💬 留言板</h3>
+        <link rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
-  <!-- 右侧：功能区 -->
-  <section class="home-right">
-
-    <!-- 日历 -->
-      <div class="home-widget">
-        <h3>📅 日历</h3>
-        <div id="calendar"></div>
-      </div>
-      <script src="/js/calendar.js"></script>
-
-    <!-- 留言板 -->
-    <div class="home-widget">
-      <h3>💬 留言板</h3>
-      <div id="waline"></div>
-      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
 
 <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
   init({
     el: '#waline',
-    serverURL: 'https://changed-cc-github-io.vercel.app',
+    serverURL: 'https://waline-server-lyart.vercel.app/',
     path: location.pathname,
     lang: 'zh-CN'
   });
 </script>
 
+        </div>
+    </section>
     </div>
-    
-  </section>
-
-</div>
-
+    <script src="/js/calendar.js"></script>
 
 
             </div>
